@@ -75,7 +75,7 @@ boost::shared_ptr<camera_info_manager::CameraInfoManager> depth_info_manager_;
 
 bool publish(const BufferParts& parts, ros::Time acquisition_time)
 {
-  if (parts.size() != 3)
+  if (parts.size() != 4)
   {
     ROS_ERROR("Expected 3 parts, got %zu!", parts.size());
     return false;
